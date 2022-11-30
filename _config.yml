@@ -7,16 +7,16 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 
 # 描述/签名
-name: LOFFER
-description: 一个可以fork的博客
+name: "2c2048d2's blog"
+description: 广告招租位
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: 
+url: https://2c2048d2.eu.org
 
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: /2c2048d2.github.io
 
 
 #
@@ -24,10 +24,10 @@ baseurl: /LOFFER
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+avatar: https://sm.ms/image/3fUY68kt1o4siu9
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+favicon: https://sm.ms/image/dU7s8qJzgxvBEtF
 
 
 # 菜单中的按钮
@@ -77,10 +77,10 @@ disqus: loffer #shortname
 
 # 输入Gitalk相关设定，即可添加评论区，具体请看教程
 gitalk:
-  clientID: 
-  clientSecret: 
-  repo: 
-  owner: 
+  clientID: 01e451f2f6934a17f21c
+  clientSecret: a439be1bb5f161349536a95cf75b2f569606bd07
+  repo: 2c2048d2.github.io
+  owner: 2c2048d2
   proxy:
 
 # 输入Google Analytics web tracking code
