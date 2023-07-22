@@ -1,0 +1,1 @@
+import{N as o}from"./Nav-3d2f09d2.js";import{_ as t,r as a,o as n,c as s,a as c,F as r,b as _}from"./index-29429ff4.js";const p={components:{Nav:o}},m=_("h2",null,"关于页面",-1);function l(d,f,i,u,N,v){const e=a("Nav");return n(),s(r,null,[c(e),m],64)}const h=t(p,[["render",l]]);export{h as default};
