@@ -72,7 +72,7 @@ export default {
     transform-style: preserve-3d;
     transform-origin: 0% 50%;
     height: 864px;
-    background-image: url('https://api.dujin.org/bing/1920.php');
+    background-image: url('https://img1.imgtp.com/2023/07/22/F9jVn3Qf.jpg');
 }
 
 .title{
