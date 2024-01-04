@@ -155,6 +155,11 @@
                 算法
                 <div class="category-count">3</div>
             </a>
+        
+            <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">
+                教程
+                <div class="category-count">1</div>
+            </a>
         </div>
     </div>
   </div>
@@ -165,7 +170,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">标签</h3>
-      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%AE%80%E4%BB%8B/" rel="tag">简介</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E9%85%B1%E8%8F%9C/" rel="tag">酱菜</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MathJax/" rel="tag">MathJax</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%AE%80%E4%BB%8B/" rel="tag">简介</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E9%85%B1%E8%8F%9C/" rel="tag">酱菜</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
     </div>
   </div>
 
@@ -179,7 +184,7 @@
       
         <a class="archive-link" href="/archives/2024/01 ">
           一月 2024 
-          <div class="archive-count">6 </div>
+          <div class="archive-count">5 </div>
         </a>
       
     </div>
@@ -193,15 +198,9 @@
       <h3 class="widget-title">最新文章</h3>
       <ul>
         
-          <a class="recent-link" href="/2024/01/04/README/" title="" >
+          <a class="recent-link" href="/2024/01/04/Hexo%E4%BD%BF%E7%94%A8MathJax%E7%9A%84%E6%96%B9%E6%B3%95/" title="Hexo使用MathJax的方法" >
             <div class="recent-link-text">
-              (no title)
-            </div>
-          </a>
-        
-          <a class="recent-link" href="/2024/01/04/test/" title="test" >
-            <div class="recent-link-text">
-              test
+              Hexo使用MathJax的方法
             </div>
           </a>
         
@@ -223,6 +222,12 @@
             </div>
           </a>
         
+          <a class="recent-link" href="/2024/01/04/hello-world/" title="Hello World" >
+            <div class="recent-link-text">
+              Hello World
+            </div>
+          </a>
+        
       </ul>
     </div>
   </div>
@@ -236,7 +241,7 @@
    
 
 
-<article id="post-README" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-Hexo使用MathJax的方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
   <div class="article-inner">
     <div class="article-main">
@@ -247,7 +252,7 @@
   
     
       <h1 itemprop="name">
-        <a class="p-name article-title" href="/2024/01/04/README/">无标题</a>
+        <a class="p-name article-title" href="/2024/01/04/Hexo%E4%BD%BF%E7%94%A8MathJax%E7%9A%84%E6%96%B9%E6%B3%95/">Hexo使用MathJax的方法</a>
       </h1>
     
   
@@ -255,38 +260,36 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2024-01-04T09:06:30.403Z" itemprop="datePublished">2024-01-04</time>
+  <time class="dt-published" datetime="2024-01-04T09:35:24.000Z" itemprop="datePublished">2024-01-04</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-    未分类 
+  <a class="meta-cate-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            342 词 
+            486 词 
           </div>
         </div>
         
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MathJax/" rel="tag">MathJax</a></li></ul>
+
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
             
-              MathJax Renderer Plugin for HexoAdd support of MathJax for Hexo.
-INSTALL$ npm install hexo-renderer-mathjax --save
-
-Edit _config.yml:
-plugins:
-- hexo-renderer-mathjax
-
+              首先我们安装hexo-renderer-mathjax
+1npm install hexo-renderer-mathjax --save
+然后我们需要换一个CDN,他默认的好像寄了
+在node_modules/hexo-renderer-mathjax/mathjax.html找到script标签，改成下面这个
+1&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;&lt;/script&gt;
+应该就能用了
 SAMPLEWrite the following latex code:
-$$\frac{\partial u}{\partial t} &#x3D; h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\right)$$
-Then you will get:
-
-
+$$\frac{\partial u}{\partial t} &#x3D; h^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2}\rig...
             
           </div>
         
@@ -298,79 +301,7 @@ Then you will get:
      
     <a class="right-panel  non-pic  "
       
-      href="/2024/01/04/README/" 
-    >
-       
-      <i class="fa-solid fa-angle-right non-pic"></i>
-       
-    </a>
-     
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-   
-
-
-<article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-   
-  <div class="article-inner">
-    <div class="article-main">
-      <header class="article-header">
-        
-<div class="main-title-bar">
-  <div class="main-title-dot"></div>
-  
-    
-      <h1 itemprop="name">
-        <a class="p-name article-title" href="/2024/01/04/test/">test</a>
-      </h1>
-    
-  
-</div>
-
-        <div class='meta-info-bar'>
-          <div class="meta-info">
-  <time class="dt-published" datetime="2024-01-04T08:34:36.000Z" itemprop="datePublished">2024-01-04</time>
-</div>
-          <div class="need-seperator meta-info">
-            <div class="meta-cate-flex">
-  
-    未分类 
-   
-</div>
-  
-          </div>
-          <div class="wordcount need-seperator meta-info">
-            19 词 
-          </div>
-        </div>
-        
-      </header>
-      <div class="e-content article-entry" itemprop="articleBody">
-        
-          <div class="truncate-text">
-            
-              mathjax 测试$ { \sqrt x } $
-
-            
-          </div>
-        
-      </div>
-
-         
-    </div>
-    
-     
-    <a class="right-panel  non-pic  "
-      
-      href="/2024/01/04/test/" 
+      href="/2024/01/04/Hexo%E4%BD%BF%E7%94%A8MathJax%E7%9A%84%E6%96%B9%E6%B3%95/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
