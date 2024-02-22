@@ -13,23 +13,23 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://2c2048d2.eu.org/2024/01/05/arch安装教程/"/>
+    <link rel="canonical" href="http://2c2048d2.eu.org/posts/codeforces-goodbye2023-anser"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="首先你应该尝试看ArchWiKi，本教程因作者个人使用习惯问题会忽略或者选择一些你可能不喜欢的东西安装。本教程的初衷也是给作者自用的。在此声明，本教程未经测试，不保证正确。 联网有线网络可以自动连上的 无线网络如下： 12iwctlstation wlan0 connect  然后输入WiFi名称，按Tab会自动补全。回车之后输入密码，连接成功之后Ctrl + C退出iwctl 更新系统时钟12t">
+        <meta name="description" content="C题目分析使结果最大化的人的先下很明显只有三种选法 一奇一偶 两个偶数 两个奇数下面是两个人的优先策略 前者不满足才会选择后者不满足就是没那么多数让你选最大化： 两个奇数（因为对方需要奇数才能让结果-1） | 两个偶数 | 一奇一偶最小化： 一奇一偶（只有这个才能让结果变少 | 两个奇数 | 两个偶数 朴素算法我们维护奇数偶数的数量，再判断下哪种就行 优化朴素TLE了 （悲那我们考虑一下怎么优化可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Arch安装教程">
-<meta property="og:url" content="http://2c2048d2.eu.org/2024/01/05/Arch%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:title" content="CodeForces GoodBye 2023 A-C">
+<meta property="og:url" content="http://2c2048d2.eu.org/posts/CodeForces-GoodBye2023-ANSER">
 <meta property="og:site_name" content="2c2048d2|Blog">
-<meta property="og:description" content="首先你应该尝试看ArchWiKi，本教程因作者个人使用习惯问题会忽略或者选择一些你可能不喜欢的东西安装。本教程的初衷也是给作者自用的。在此声明，本教程未经测试，不保证正确。 联网有线网络可以自动连上的 无线网络如下： 12iwctlstation wlan0 connect  然后输入WiFi名称，按Tab会自动补全。回车之后输入密码，连接成功之后Ctrl + C退出iwctl 更新系统时钟12t">
+<meta property="og:description" content="C题目分析使结果最大化的人的先下很明显只有三种选法 一奇一偶 两个偶数 两个奇数下面是两个人的优先策略 前者不满足才会选择后者不满足就是没那么多数让你选最大化： 两个奇数（因为对方需要奇数才能让结果-1） | 两个偶数 | 一奇一偶最小化： 一奇一偶（只有这个才能让结果变少 | 两个奇数 | 两个偶数 朴素算法我们维护奇数偶数的数量，再判断下哪种就行 优化朴素TLE了 （悲那我们考虑一下怎么优化可">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-05T07:05:27.000Z">
-<meta property="article:modified_time" content="2024-01-05T08:11:36.012Z">
+<meta property="article:published_time" content="2024-01-04T06:59:25.933Z">
+<meta property="article:modified_time" content="2024-02-22T10:55:35.088Z">
 <meta property="article:author" content="2c2048d2">
-<meta property="article:tag" content="Arch">
-<meta property="article:tag" content="教程">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="codeforces">
 <meta name="twitter:card" content="summary">
     
     
@@ -42,7 +42,7 @@
     
     <title>
         
-            Arch安装教程 -
+            CodeForces GoodBye 2023 A-C -
         
         2c2048d2|Blog
     </title>
@@ -228,7 +228,7 @@
     
     <script id="hexo-configurations">
     window.config = {"hostname":"2c2048d2.eu.org","root":"/","language":"zh-CN"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/img/back.jpg","dark":"/img/back2.jpg"},"title":"2c2048d2 | Blog","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"主页":{"path":"/","icon":"fa-regular fa-house"},"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"标签":{"path":"/tags","icon":"fa-regular fa-tag"},"分类":{"path":"/categories","icon":"fa-regular fa-list"},"友链":{"path":"/friendLink","icon":"fa-regular fa-face-smile"},"关于":{"icon":"fa-regular fa-user","submenus":{"Me":"/about","Github":"https://github.com/2c2048d2","Blog":"https://2c2048d2.eu.org"}}},"search":{"enable":true,"preload":false}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/1/4 23:59:59"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/img/back.jpg","dark":"/img/back2.jpg"},"title":"2c2048d2 | Blog","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":true},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Brilliant & Shining!","artist":"Halv","url":"https://m704.music.126.net/20240222192901/d3359096b166fcbe3c00efc3f217bff1/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/14342134060/c0fa/0945/f774/47ebb9bd7a31d4951e68ac41c1634ac5.m4a?authSecret=0000018dd07c942a1c850aaba0541a78","cover":"http://p2.music.126.net/-O7zCCxK1oo9jO8CmpCVFA==/109951167389874687.jpg"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"主页":{"path":"/","icon":"fa-regular fa-house"},"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"标签":{"path":"/tags","icon":"fa-regular fa-tag"},"分类":{"path":"/categories","icon":"fa-regular fa-list"},"友链":{"path":"/friendLink","icon":"fa-regular fa-face-smile"},"关于":{"icon":"fa-regular fa-user","submenus":{"Me":"/about","Github":"https://github.com/2c2048d2","Blog":"https://2c2048d2.eu.org"}}},"search":{"enable":true,"preload":false}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/1/4 23:59:59"};
     window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
     window.data = {"masonry":false};
   </script>
@@ -586,7 +586,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -594,7 +594,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -620,7 +620,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">Arch安装教程</h1>
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">CodeForces GoodBye 2023 A-C</h1>
                 </div>
             
             </div>
@@ -641,15 +641,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-01-05 15:05:27</span>
-        <span class="mobile">2024-01-05 15:05:27</span>
+        <span class="desktop">2024-01-04 14:59:25</span>
+        <span class="mobile">2024-01-04 14:59:25</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-05 16:11:36</span>
-            <span class="mobile">2024-01-05 16:11:36</span>
+            <span class="desktop">2024-02-22 18:55:35</span>
+            <span class="mobile">2024-02-22 18:55:35</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -663,7 +663,7 @@
                     
                         
                         <li>
-                            <a href="/categories/Arch/">Arch</a>&nbsp;
+                            <a href="/categories/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;
                         </li>
                     
                     
@@ -677,11 +677,11 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Arch/">Arch</a>&nbsp;
+                        <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                        | <a href="/tags/codeforces/">codeforces</a>&nbsp;
                     </li>
                 
             </ul>
@@ -707,81 +707,30 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>首先你应该尝试看ArchWiKi，本教程因作者个人使用习惯问题会忽略或者选择一些你可能不喜欢的东西安装。本教程的初衷也是给作者自用的。在此声明，本教程未经测试，不保证正确。</p>
-<h2 id="联网"><a href="#联网" class="headerlink" title="联网"></a>联网</h2><p>有线网络可以自动连上的</p>
-<p>无线网络如下：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iwctl</span><br><span class="line">station wlan0 connect </span><br></pre></td></tr></table></figure></div>
-<p>然后输入WiFi名称，按Tab会自动补全。回车之后输入密码，连接成功之后<code>Ctrl + C</code>退出iwctl</p>
-<h2 id="更新系统时钟"><a href="#更新系统时钟" class="headerlink" title="更新系统时钟"></a>更新系统时钟</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">timedatectl set-ntp <span class="literal">true</span></span><br><span class="line">timedatectl status</span><br></pre></td></tr></table></figure></div>
-<h3 id="关于在Windows和Linux切换时发现时间不同步的情况"><a href="#关于在Windows和Linux切换时发现时间不同步的情况" class="headerlink" title="关于在Windows和Linux切换时发现时间不同步的情况"></a>关于在Windows和Linux切换时发现时间不同步的情况</h3><p>原因是Linux在硬件里储存的是UTC,而Windows储存的是地方时。<br>解决方案就是关闭Windows的时间同步，然后在Windows下用管理员权限运行以下命令，这样Windows就会把硬件时间当作UTC来处理</p>
-<div class="highlight-container" data-rel="Ps"><figure class="iseeu highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add <span class="string">&quot;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&quot;</span> /v RealTimeIsUniversal /d <span class="number">1</span> /t REG_DWORD /f</span><br></pre></td></tr></table></figure></div>
-<h2 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h2><p>个人还是比较喜欢用reflector的</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reflector --<span class="built_in">sort</span> rate --threads 100 -c China --save /etc/pacman.d/mirrorlist</span><br></pre></td></tr></table></figure></div>
-<h2 id="分区-挂载"><a href="#分区-挂载" class="headerlink" title="分区 &amp; 挂载"></a>分区 &amp; 挂载</h2><p>至少需要一个&#x2F; ， 一个&#x2F;boot<br>如果需要安装双系统boot分区可以直接选择Windows的主分区<br>当然不这么做也是可以的。后面会提到修复Windows的引导。</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">lsblk</span><br><span class="line">cfdisk /dev/</span><br></pre></td></tr></table></figure></div>
-<p>Boot</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.fat -F32 /dev/</span><br></pre></td></tr></table></figure></div>
-<p>主分区</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkfs.ext4 /dev/</span><br></pre></td></tr></table></figure></div>
-<p>挂载成这样<br>&#x2F; -&gt; &#x2F;mnt<br>&#x2F;boot -&gt; &#x2F;mnt&#x2F;boot<br>可以使用以下命令查看挂载情况</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dh -h</span><br></pre></td></tr></table></figure></div>
-<h2 id="安装系统和其他一些常用软件包"><a href="#安装系统和其他一些常用软件包" class="headerlink" title="安装系统和其他一些常用软件包"></a>安装系统和其他一些常用软件包</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacstrap /mnt base base-devel linux linux-firmware networkmanager vim sudo zsh zsh-completions</span><br></pre></td></tr></table></figure></div>
-<p>如果 GPG 证书错误，可以通过更新 archlinux-keyring 解决此问题</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S archlinux-keyring</span><br></pre></td></tr></table></figure></div>
-<h2 id="生成fstab"><a href="#生成fstab" class="headerlink" title="生成fstab"></a>生成fstab</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">genfstab -U /mnt &gt; /mnt/etc/fstab</span><br><span class="line"><span class="built_in">cat</span> /mnt/etc/fstab</span><br></pre></td></tr></table></figure></div>
-<h2 id="chroot"><a href="#chroot" class="headerlink" title="chroot"></a>chroot</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arch-chroot /mnt</span><br></pre></td></tr></table></figure></div>
-<h2 id="一些本地化设置"><a href="#一些本地化设置" class="headerlink" title="一些本地化设置"></a>一些本地化设置</h2><p>设置NetworkManager自启</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> NetworkManager</span><br></pre></td></tr></table></figure></div>
-<p>Locale设置</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/locale.gen</span><br></pre></td></tr></table></figure></div>
-<p>取消en_US.UTF-8 UTF-8 和 zh_CN.UTF-8 UTF-8的注释<br>然后</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale-gen</span><br></pre></td></tr></table></figure></div>
-<p>默认的tty是不能显示中文的，我们把默认语言设置成英文</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;LANG=en_US.UTF-8&#x27;</span>  &gt; /etc/locale.conf</span><br></pre></td></tr></table></figure></div>
-<p>设置主机名和hosts</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/hostname</span><br><span class="line">vim /etc/hosts</span><br></pre></td></tr></table></figure></div>
-<p>在hosts内加入</p>
-<div class="highlight-container" data-rel="Text"><figure class="iseeu highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1   localhost</span><br><span class="line">::1         localhost</span><br></pre></td></tr></table></figure></div>
-<p>设置时区</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br></pre></td></tr></table></figure></div>
-<p>设置硬件时间</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hwclock --systohc</span><br></pre></td></tr></table></figure></div>
-<p>设置root密码</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd root</span><br></pre></td></tr></table></figure></div>
-<p>添加一个管理员用户</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -m -G wheel </span><br></pre></td></tr></table></figure></div>
-<p>在后面加上用户名，如果你的名字比较奇怪，比如像作者的，那你可能需要加上–badname<br>然后记得给他设置个密码<br>然后</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EDITOR=vim visudo</span><br></pre></td></tr></table></figure></div>
-<p>把<code>%wheel ALL=(ALL:ALL) ALL</code>前面的注释取消掉</p>
-<h2 id="安装微码"><a href="#安装微码" class="headerlink" title="安装微码"></a>安装微码</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pacman -S intel-ucode # Intel</span></span><br><span class="line">pacman -S amd-ucode <span class="comment"># AMD</span></span><br></pre></td></tr></table></figure></div>
-<p>作者用的是AMD的，你要是Intel的就装英特尔的</p>
-<h2 id="桌面环境"><a href="#桌面环境" class="headerlink" title="桌面环境"></a>桌面环境</h2><p>省事就kde</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -S plasma-meta sddm</span><br><span class="line">systemctl <span class="built_in">enable</span> sddm</span><br></pre></td></tr></table></figure></div>
-<h2 id="引导"><a href="#引导" class="headerlink" title="引导"></a>引导</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pacman -S grub efibootmgr os-prober</span><br><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ArchLinux</span><br></pre></td></tr></table></figure></div>
-<p>为了能找到Windows,我们需要先启用os-prober</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/default/grub</span><br></pre></td></tr></table></figure></div>
-<p>把最后一行取消注释<br>然后生成引导</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure></div>
-<h2 id="重启进入系统"><a href="#重启进入系统" class="headerlink" title="重启进入系统"></a>重启进入系统</h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br><span class="line">umount -R /mnt</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure></div>
-
+            <h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><h3 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h3><p>使结果最大化的人的先下<br>很明显只有三种选法 一奇一偶 两个偶数 两个奇数<br>下面是两个人的优先策略 前者<em><strong>不满足</strong></em>才会选择后者<br>不满足就是没那么多数让你选<br>最大化： 两个奇数（因为对方需要奇数才能让结果-1） | 两个偶数 | 一奇一偶<br>最小化： 一奇一偶（只有这个才能让结果变少 | 两个奇数 | 两个偶数</p>
+<h3 id="朴素算法"><a href="#朴素算法" class="headerlink" title="朴素算法"></a>朴素算法</h3><p>我们维护奇数偶数的数量，再判断下哪种就行</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>朴素TLE了 （悲<br>那我们考虑一下怎么优化<br>可以发现只有第一次下可能不存在偶数，而我们先下的人他是先考虑消耗两个奇数的下法（就是说他不考虑偶数<br>那么我们后下的这位肯定是能满足有偶数的条件的<br>等于说，这两位下棋都不需要考虑偶数<br>那我们就来看奇数</p>
+<p>假设奇数是足够的<br>那么前手会先消耗两个奇数<br>后手会消耗一个奇数<br>那一轮就是消耗3个奇数，使结果-1<br>最后如果剩下两个，那么先手会用掉这两个，结果不变<br>如果最后剩下一个，那谁用都会再使结果-1<br>所以就是看每次奇数的个数，<br>答案就是sum - n&#x2F;3 - (n%3&#x3D;&#x3D;1)</p>
+<p>如果奇数不够呢<br>那很明显，需要特殊考虑的只有 只有一个奇数 的情况<br>从2个开始上述式子都可以正确处理</p>
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> LL;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  cin.<span class="built_in">tie</span>(<span class="number">0</span>)-&gt;<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">  <span class="type">int</span> T = <span class="number">1</span>;</span><br><span class="line">  cin &gt;&gt; T;</span><br><span class="line">  <span class="keyword">while</span> (T--) &#123;</span><br><span class="line">    <span class="type">int</span> n;cin &gt;&gt; n;</span><br><span class="line">    LL odd_num = <span class="number">0</span>, sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> now, i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">      cin &gt;&gt; now, sum += now;</span><br><span class="line">      odd_num += now &amp; <span class="number">1</span>;</span><br><span class="line">      <span class="keyword">if</span> (odd_num == <span class="number">1</span> &amp;&amp; i == <span class="number">1</span>) cout &lt;&lt; sum &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">      <span class="keyword">else</span> cout &lt;&lt; sum - odd_num / <span class="number">3</span> - (odd_num % <span class="number">3</span> == <span class="number">1</span>) &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Arch安装教程</li>
+        <li><strong>标题:</strong> CodeForces GoodBye 2023 A-C</li>
         <li><strong>作者:</strong> 2c2048d2</li>
         <li><strong>创建于
-                :</strong> 2024-01-05 15:05:27</li>
+                :</strong> 2024-01-04 14:59:25</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-01-05 16:11:36
+                    :</strong> 2024-02-22 18:55:35
             </li>
         
         <li>
-            <strong>链接:</strong> https://2c2048d2.eu.org/2024/01/05/Arch安装教程/
+            <strong>链接:</strong> https://2c2048d2.eu.org//posts/CodeForces-GoodBye2023-ANSER
         </li>
         <li>
             <strong>
@@ -803,11 +752,11 @@
             <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
                 
                     <li class="tag-item mx-0.5">
-                        <a href="/tags/Arch/">#Arch</a>&nbsp;
+                        <a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>&nbsp;
                     </li>
                 
                     <li class="tag-item mx-0.5">
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>&nbsp;
+                        <a href="/tags/codeforces/">#codeforces</a>&nbsp;
                     </li>
                 
             </ul>
@@ -818,14 +767,29 @@
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/posts/ArchLinux-WPS-install-guide"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">ArchLinux-WPS食用方式</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/01/04/Hexo%E4%BD%BF%E7%94%A8MathJax%E7%9A%84%E6%96%B9%E6%B3%95/"
+                        href="/posts/Bitwise-operations-guide"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Hexo使用MathJax的方法</span>
+                                <span class="post-nav-title-item">位运算简介</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -846,8 +810,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">Arch安装教程</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%81%94%E7%BD%91"><span class="nav-text">联网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%92%9F"><span class="nav-text">更新系统时钟</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%9C%A8Windows%E5%92%8CLinux%E5%88%87%E6%8D%A2%E6%97%B6%E5%8F%91%E7%8E%B0%E6%97%B6%E9%97%B4%E4%B8%8D%E5%90%8C%E6%AD%A5%E7%9A%84%E6%83%85%E5%86%B5"><span class="nav-text">关于在Windows和Linux切换时发现时间不同步的情况</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8D%A2%E6%BA%90"><span class="nav-text">换源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%8C%BA-%E6%8C%82%E8%BD%BD"><span class="nav-text">分区 &amp; 挂载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F%E5%92%8C%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="nav-text">安装系统和其他一些常用软件包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90fstab"><span class="nav-text">生成fstab</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chroot"><span class="nav-text">chroot</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%9C%AC%E5%9C%B0%E5%8C%96%E8%AE%BE%E7%BD%AE"><span class="nav-text">一些本地化设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%BE%AE%E7%A0%81"><span class="nav-text">安装微码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83"><span class="nav-text">桌面环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%AF%BC"><span class="nav-text">引导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E5%90%AF%E8%BF%9B%E5%85%A5%E7%B3%BB%E7%BB%9F"><span class="nav-text">重启进入系统</span></a></li></ol>
+        <div class="page-title">CodeForces GoodBye 2023 A-C</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C"><span class="nav-text">C</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E5%88%86%E6%9E%90"><span class="nav-text">题目分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%B4%E7%B4%A0%E7%AE%97%E6%B3%95"><span class="nav-text">朴素算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E5%8C%96"><span class="nav-text">优化</span></a></li></ol></li></ol>
 
     </div>
 </div>
